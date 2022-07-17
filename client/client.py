@@ -27,11 +27,10 @@ def main():
             for livro in ls:
                 print('')
                 print('Nome do livro: ', livro.nome)
-        elif op == '3':
-            ls = client.service.atualizarLivro()
-            for livro in ls:
-                print('')
-                print('Nome do livro: ', livro.nome)
+        elif op == '3':           
+            la = input(f'Nome do livro antigo: ${livro.nome}')
+            ln = input(f'\nLivro novo: ${livro.nome}')
+            ls = client.service.atualizarLivro(la,ln)
         elif op == '0':
             break
         else:
