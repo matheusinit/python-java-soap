@@ -14,7 +14,7 @@ def main():
     while True:
         print('\nMENU:')
         print('1) Inserir Livro')
-        print('2|) Listar Livros')
+        print('2) Listar Livros')
         print('0) Sair')
         op = input('> ')
         if op == '1':
