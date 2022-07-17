@@ -29,7 +29,7 @@ def main():
                 print('Nome do livro: ', livro.nome)
         elif op == '3':           
             la = input(f'Nome do livro antigo: ${livro.nome}')
-            ln = input(f'\nLivro novo: ${livro.nome}')
+            ln = input(f'\nNome do livro novo: ${livro.nome}')
             ls = client.service.atualizarLivro(la,ln)
         elif op == '0':
             break
